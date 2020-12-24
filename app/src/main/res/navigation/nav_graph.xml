@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_titleFragment_to_peopleFragment"
             app:destination="@id/peopleFragment" />
+        <action
+            android:id="@+id/action_titleFragment_to_planetFragment"
+            app:destination="@id/planetFragment" />
     </fragment>
     <fragment
         android:id="@+id/peopleFragment"
@@ -29,5 +32,10 @@
         android:label="fragment_people_detail"
         tools:layout="@layout/fragment_people_detail">
     </fragment>
+    <fragment
+        android:id="@+id/planetFragment"
+        android:name="com.katsidzira.starswarslexicon.planets.PlanetFragment"
+        android:label="fragment_planet"
+        tools:layout="@layout/fragment_planet" />
 
 </navigation>

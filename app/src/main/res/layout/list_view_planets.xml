@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="planet"
+            type="com.katsidzira.starswarslexicon.models.Planet" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:elevation="5dp"
+            android:layout_margin="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_planet_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{planet.name}"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Name"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tv_planet_population"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{planet.population}"
+                    app:layout_constraintTop_toBottomOf="@id/tv_planet_name"
+                    tools:text="Population"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tv_planet_climate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{planet.climate}"
+                    app:layout_constraintTop_toBottomOf="@id/tv_planet_population"
+                    tools:text="Climate"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/tv_planet_terrain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{planet.terrain}"
+                    app:layout_constraintTop_toBottomOf="@id/tv_planet_climate"
+                    tools:text="Terrain"
+                    android:gravity="center_horizontal"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</layout>

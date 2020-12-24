@@ -22,6 +22,10 @@ class TitleFragment : Fragment() {
             findNavController().navigate(R.id.action_titleFragment_to_peopleFragment)
         }
 
+        binding.tvPlanetsRoot.setOnClickListener {
+            findNavController().navigate(R.id.action_titleFragment_to_planetFragment)
+        }
+
         return binding.root
     }
 
