@@ -9,5 +9,25 @@
         android:id="@+id/titleFragment"
         android:name="com.katsidzira.starswarslexicon.TitleFragment"
         android:label="fragment_title"
-        tools:layout="@layout/fragment_title" />
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_peopleFragment"
+            app:destination="@id/peopleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleFragment"
+        android:name="com.katsidzira.starswarslexicon.people.PeopleFragment"
+        android:label="fragment_people"
+        tools:layout="@layout/fragment_people">
+        <action
+            android:id="@+id/action_peopleFragment_to_peopleDetailFragment"
+            app:destination="@id/peopleDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/peopleDetailFragment"
+        android:name="com.katsidzira.starswarslexicon.people.PeopleDetailFragment"
+        android:label="fragment_people_detail"
+        tools:layout="@layout/fragment_people_detail">
+    </fragment>
+
 </navigation>

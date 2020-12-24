@@ -4,7 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.katsidzira.starswarslexicon.models.ResponseResult
+import com.katsidzira.starswarslexicon.network.ResponseResult
 import com.katsidzira.starswarslexicon.models.Vehicle
 import com.katsidzira.starswarslexicon.network.StarWarsService
 import retrofit2.Call

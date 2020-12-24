@@ -30,6 +30,10 @@ class StarWarsService {
         return starWarsApi.getAllPlanets()
     }
 
+    fun fetchSinglePlanet(id: Int): Call<Planet> {
+        return starWarsApi.getPlanet(id)
+    }
+
     companion object {
         private const val BASE_URL = "https://swapi.dev/api/"
 

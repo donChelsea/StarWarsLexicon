@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.katsidzira.starswarslexicon.databinding.FragmentTitleBinding
 
 class TitleFragment : Fragment() {
@@ -16,6 +17,11 @@ class TitleFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentTitleBinding.inflate(inflater)
+
+        binding.tvPeopleRoot.setOnClickListener {
+            findNavController().navigate(R.id.action_titleFragment_to_peopleFragment)
+        }
+
         return binding.root
     }
 

@@ -23,10 +23,6 @@ data class People (
     @SerializedName("skin_color")
     val skinColor: String,
 
-    val created: String,
-    val edited: String,
-    val url: String,
-
     @SerializedName("films")
     val filmsUrls: List<String>,
 

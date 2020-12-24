@@ -1,4 +1,4 @@
-package com.katsidzira.starswarslexicon.models
+package com.katsidzira.starswarslexicon.network
 
 import android.text.TextUtils
 
