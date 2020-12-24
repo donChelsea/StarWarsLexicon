@@ -2,7 +2,7 @@ package com.katsidzira.starswarslexicon.models
 
 import android.text.TextUtils
 
-data class SWModelsList(
+data class SWModelList<T>(
     val count: Int = 0,
     val next: String,
     val previous: String,
